@@ -23,9 +23,29 @@
         }
 
         .container {
-            max-width: 600px;
+            max-width: 900px;
             width: 100%;
             text-align: center;
+        }
+
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .games-section {
+            flex: 1;
+        }
+
+        .selfie {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 30px rgba(100, 200, 255, 0.3);
         }
 
         h1 {
@@ -63,11 +83,16 @@
 <body>
     <div class="container">
         <h1>LÄRORIKA COSMIC-SPEL</h1>
-        <ul class="games-list">
-            <li><a href="cosmiclakemedelmedcoolmusik.html">Läkemedelsmigrering</a></li>
-            <li><a href="doctor-maze-game.html">Vårdkontakt</a></li>
-            <li><a href="hotkey-trainer-locked.html">Kortkommandon</a></li>
-        </ul>
+        <div class="content-wrapper">
+            <div class="games-section">
+                <ul class="games-list">
+                    <li><a href="cosmiclakemedelmedcoolmusik.html">Läkemedelsmigrering</a></li>
+                    <li><a href="doctor-maze-game.html">Vårdkontakt</a></li>
+                    <li><a href="hotkey-trainer-locked.html">Kortkommandon</a></li>
+                </ul>
+            </div>
+            <img src="selfie.png" alt="Selfie" class="selfie">
+        </div>
     </div>
 </body>
 </html>
